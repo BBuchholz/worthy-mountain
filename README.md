@@ -25,13 +25,23 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 When you use this template, try to follow the checklist to update your info properly
 
-- Modified LICENSING to BSD-3-Clause and added myself (Brent Buchholz) as the Copyright Holder
-- [ ] Change the title in `App.vue`
-- [ ] Change the hostname in `vite.config.ts`
-- [ ] Change the favicon in `public`
-- [ ] Remove the `.github` folder which contains the funding info
-- [ ] Clean up the READMEs and remove routes
+- Modified LICENSING to BSD-3-Clause
 
+- Changed the title in `App.vue` 
+- Changed title on home page
+
+- Changed all instances the default CampTent symbol to [[THE MYRIAD SYMBOL]]
+
+- Removed the `.github` folder which contains the funding info
+- Changed the hostname in `vite.config.ts`
+- [ ] change all github link to point to https://github.com/BBuchholz/worthy-mountain
+
+- [ ] Change the favicon in `public`
+
+- [ ] Clean up the READMEs and remove routes
+	- [ ] change demo link to our Netlify site
+	- [ ] remove i18n
+	- [ ] Replace "Variations" section with a credited link to the original template and our reasons for modifying
 And, enjoy :)
 
 
