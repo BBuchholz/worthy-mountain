@@ -20,7 +20,7 @@ const { t } = useI18n()
       🜾
     </div>
     <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
+      <a rel="noreferrer" href="https://github.com/BBuchholz/worthy-mountain" target="_blank">
         Worthy Mountain
       </a>
     </p>
