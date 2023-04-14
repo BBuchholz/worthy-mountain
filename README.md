@@ -23,9 +23,9 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 ## Checklist
 
-When you use this template, try follow the checklist to update your info properly
+When you use this template, try to follow the checklist to update your info properly
 
-- [ ] Change the author name in `LICENSE`
+- Modified LICENSING to BSD-3-Clause and added myself (Brent Buchholz) as the Copyright Holder
 - [ ] Change the title in `App.vue`
 - [ ] Change the hostname in `vite.config.ts`
 - [ ] Change the favicon in `public`
