@@ -1,4 +1,4 @@
-<h1>🜾</h1>
+<h1 align='center'>🜾</h1>
 
 <p align='center'>
   Worthy Mountain - Base Vite Template for Coventry Grove sites
@@ -29,15 +29,18 @@ When you use this template, try to follow the checklist to update your info prop
 
 - Removed the `.github` folder which contains the funding info
 - Changed the hostname in `vite.config.ts`
-- [ ] change all github link to point to https://github.com/BBuchholz/worthy-mountain
+- changed all github links to point to https://github.com/BBuchholz/worthy-mountain
+- changed demo link to our Netlify site
+- added Logo to index.vue
+
 
 - [ ] Change the favicon in `public`
 
 - [ ] Clean up the READMEs and remove routes
-	- [ ] change demo link to our Netlify site
-	- [ ] remove i18n
 	- [ ] Replace "Variations" section with a credited link to the original template and our reasons for modifying
-And, enjoy :)
+	- [ ] remove i18n (search i18n to find all usages)
+		- [ ] ==First== just replace the footer link with something relevant to Myriad, universal to all sites, and using the same symbol, I'm thinking a Lexicon page, as our myrKis are a Language all their own
+		- [ ] then go through and remove all actual references in code (so it's not being built in where it doesn't need to be, our logic here is not necessarily exclusionary, but these are designed to be decentralized local instances and are not for international audiences, interested parties are welcome to port the code to their own languages but it is outside of our scope to maintain multiple word lists for every bit of text)
 
 
 

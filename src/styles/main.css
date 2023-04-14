@@ -13,6 +13,11 @@ html.dark {
   color-scheme: dark;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 #nprogress {
   pointer-events: none;
 }
