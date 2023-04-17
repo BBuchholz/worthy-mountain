@@ -8,7 +8,7 @@ title: About
   <h3>About</h3>
 </div>
 
-[Worthy Mountain](https://github.com/BBuchholz/worthy-mountain) is an opinionated [Vite](https://github.com/vitejs/vite) starter template adapted by [BBuchholz](https://github.com/BBuchholz)  from [Vitesse](https://github.com/antfu/vitesse) as a base template for all Coventry Grove sites. With **file-based routing**, **components auto importing**, **markdown support**, I18n, PWA and uses **UnoCSS** for styling and icons.
+[Worthy Mountain](https://github.com/BBuchholz/worthy-mountain) is an opinionated [Vite](https://github.com/vitejs/vite) starter template adapted by [BBuchholz](https://github.com/BBuchholz)  from [Vitesse](https://github.com/antfu/vitesse) as a base template for all Coventry Grove sites. With **file-based routing**, **components auto importing**, **markdown support**, PWA and uses **UnoCSS** for styling and icons.
 
 ```js
 // syntax highlighting example
