@@ -33,14 +33,13 @@ When you use this template, try to follow the checklist to update your info prop
 - changed demo link to our Netlify site
 - added Logo to index.vue
 
+- Changed the favicon in `public`
 
-- [ ] Change the favicon in `public`
-
-- [ ] Clean up the READMEs and remove routes
+- [ ] Clean up the READMEs and remove routes 
 	- [ ] Replace "Variations" section with a credited link to the original template and our reasons for modifying
 	- [ ] remove i18n (search i18n to find all usages)
-		- [ ] ==First== just replace the footer link with something relevant to Myriad, universal to all sites, and using the same symbol, I'm thinking a Lexicon page, as our myrKis are a Language all their own
-		- [ ] then go through and remove all actual references in code (so it's not being built in where it doesn't need to be, our logic here is not necessarily exclusionary, but these are designed to be decentralized local instances and are not for international audiences, interested parties are welcome to port the code to their own languages but it is outside of our scope to maintain multiple word lists for every bit of text)
+		- replaced the footer link with something relevant to Myriad, universal to all sites, and using the same symbol, I'm thinking a Lexicon page, as our myrKis are a Language all their own (UPDATE: its under "zhones.md")
+		- [ ] ==NEXT== create a new branch, and go through and remove all actual references in code (so it's not being built in where it doesn't need to be, our logic here is not necessarily exclusionary, but these are designed to be decentralized local instances and are not for international audiences, interested parties are welcome to port the code to their own languages but it is outside of our scope to maintain multiple word lists for every bit of text) ==UPDATE== lets leave the package but remove all existing locales except for a couple so we can add in specific languages based on where we are, but aren't maintaining them in the template (list item somewhere that says the "our logic here..." part above but also states that an i18n example is retained here if required **IM THINKING WE SHOULD DO IT IN THE ABOUT PAGE** where we credit the original template and delineate our changes, makes sense :)
 
 
 
@@ -142,44 +141,26 @@ When you use this template, try to follow the checklist to update your info prop
   - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - All in one i18n support
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-## Variations
+## Credit Where Credit Is Due
 
-As this template is strongly opinionated, the following provides a curated list for community-maintained variations with different preferences and feature sets. Check them out as well. PR to add yours is also welcome!
-
-###### Official
-
-- [vitesse-lite](https://github.com/antfu/vitesse-lite) - Lightweight version of Vitesse
-- [vitesse-nuxt3](https://github.com/antfu/vitesse-nuxt3) - Vitesse for Nuxt 3
-- [vitesse-nuxt-bridge](https://github.com/antfu/vitesse-nuxt-bridge) - Vitesse for Nuxt 2 with Bridge
-- [vitesse-webext](https://github.com/antfu/vitesse-webext) - WebExtension Vite starter template
-
-###### Community
-
-- [vitesse-ssr-template](https://github.com/frandiox/vitesse-ssr-template) by [@frandiox](https://github.com/frandiox) - Vitesse with SSR
-- [vitailse](https://github.com/zynth17/vitailse) by [@zynth17](https://github.com/zynth17) - Like Vitesse but with TailwindCSS
-- [vitesse-modernized-chrome-ext](https://github.com/xiaoluoboding/vitesse-modernized-chrome-ext) by [@xiaoluoboding](https://github.com/xiaoluoboding) - ⚡️ Modernized Chrome Extension Manifest V3 Vite Starter Template
-- [vitesse-stackter-clean-architect](https://github.com/shamscorner/vitesse-stackter-clean-architect) by [@shamscorner](https://github.com/shamscorner) - A modular clean architecture pattern in vitesse template
-- [vitesse-enterprise](https://github.com/FranciscoKloganB/vitesse-enterprise) by [@FranciscoKloganB](https://github.com/FranciscoKloganB) - Consistent coding styles regardless of team-size.
-- [vitecamp](https://github.com/nekobc1998923/vitecamp) by [@nekobc1998923](https://github.com/nekobc1998923) - Like Vitesse but without SSG/SSR/File based routing, includes Element Plus
-- [vitesse-h5](https://github.com/YunYouJun/vitesse-h5) by [@YunYouJun](https://github.com/YunYouJun) - Vitesse for Mobile
-- [bat](https://github.com/olgam4/bat) by [@olgam4](https://github.com/olgam4) - Vitesse for SolidJS
-- [vitesse-solid](https://github.com/xbmlz/vitesse-solid) by [@xbmlz](https://github.com/xbmlz) - Vitesse for SolidJS, build with [`SolidStart`](https://start.solidjs.com/), includes [UnoCSS](https://github.com/unocss/unocss) and [HopeUI](https://hope-ui.com/).
+This template was adapted from the very excellent 
+[Vitesse template on GitHub](https://github.com/antfu/vitesse). created by [antfu](https://github.com/antfu) to whom I am grateful. The work done there gave me a wonderfully thought out starting point for my own remixes, which is entirely in line with the dev philosophy WE actively embrace with MyriaD.
 
 ## Try it now!
 
-> Vitesse requires Node >=14.18
+> Worthy Mountain requires Node >=14.18
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/antfu/vitesse/generate).
+[Create a repo from this template on GitHub](https://github.com/BBuchholz/worthy-mountain/generate).
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit antfu/vitesse my-vitesse-app
-cd my-vitesse-app
+npx degit BBuchholz/worthy-mountain my-worthy-mountain-app
+cd my-worthy-mountain-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
 
@@ -222,8 +203,3 @@ Run the image and specify port mapping with the `-p` flag.
 docker run --rm -it -p 8080:80 vitesse:latest
 ```
 
-## Why
-
-I have created several Vite apps recently. Setting the configs up is kinda the bottleneck for me to make the ideas simply come true within a very short time.
-
-So I made this starter template for myself to create apps more easily, along with some good practices that I have learned from making those apps. It's strongly opinionated, but feel free to tweak it or even maintain your own forks. [(see community maintained variation forks)](#variations)
