@@ -5,7 +5,7 @@
 </p>
 
 <p align='center'>
-Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
+Preparing tha Vessels 2B <b>MystiQal Wizards</b><sup><em>Movin' Wights</em></sup><br>
 </p>
 
 <br>
@@ -16,9 +16,72 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 
 <br>
 
+
+## Try it now!
+
+> Worthy Mountain requires Node >=14.18
+
+### GitHub Template
+
+[Create a repo from this template on GitHub](https://github.com/BBuchholz/worthy-mountain/generate).
+
+### Clone to local
+
+If you prefer to do it manually with the cleaner git history
+
+```bash
+npx degit BBuchholz/worthy-mountain my-worthy-mountain-app
+cd my-worthy-mountain-app
+pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+```
+
+
+## Usage
+
+### Development
+
+Just run and visit http://localhost:3333
+
+```bash
+pnpm dev
+```
+
+### Build
+
+To build the App, run
+
+```bash
+pnpm build
+```
+
+And you will see the generated file in `dist` that ready to be served.
+
+### Deploy on Netlify
+
+First, initialize as a Netlify site
+
+```
+ntl init
+```
+
+Then just build and deploy
+
+```
+ntl build
+ntl deploy
+```
+
+Then, after review, deploy to production with
+
+```
+ntl deploy --prod
+```
+
 ## Checklist
 
-When you use this template, try to follow the checklist to update your info properly
+NB: these are just the steps we followed adapting from the original, modify this going forward for all sites to use (first task, this.)
+
+When you use this template, try to follow the checklist to update your info properly 
 
 - Modified LICENSING to BSD-3-Clause
 
@@ -35,13 +98,7 @@ When you use this template, try to follow the checklist to update your info prop
 
 - Changed the favicon in `public`
 
-- [ ] Clean up the READMEs and remove routes 
-	- [ ] Replace "Variations" section with a credited link to the original template and our reasons for modifying
-	- [ ] remove i18n (search i18n to find all usages)
-		- replaced the footer link with something relevant to Myriad, universal to all sites, and using the same symbol, I'm thinking a Lexicon page, as our myrKis are a Language all their own (UPDATE: its under "zhones.md")
-		- [ ] ==NEXT== create a new branch, and go through and remove all actual references in code (so it's not being built in where it doesn't need to be, our logic here is not necessarily exclusionary, but these are designed to be decentralized local instances and are not for international audiences, interested parties are welcome to port the code to their own languages but it is outside of our scope to maintain multiple word lists for every bit of text) ==UPDATE== lets leave the package but remove all existing locales except for a couple so we can add in specific languages based on where we are, but aren't maintaining them in the template (list item somewhere that says the "our logic here..." part above but also states that an i18n example is retained here if required **IM THINKING WE SHOULD DO IT IN THE ABOUT PAGE** where we credit the original template and delineate our changes, makes sense :)
-
-
+- Cleaned up the README 
 
 ## Features
 
@@ -146,60 +203,14 @@ When you use this template, try to follow the checklist to update your info prop
 This template was adapted from the very excellent 
 [Vitesse template on GitHub](https://github.com/antfu/vitesse). created by [antfu](https://github.com/antfu) to whom I am grateful. The work done there gave me a wonderfully thought out starting point for my own remixes, which is entirely in line with the dev philosophy WE actively embrace with MyriaD.
 
-## Try it now!
+## i18n Removal
+When we cloned the original [Vitesse template on GitHub](https://github.com/antfu/vitesse). created by [antfu](https://github.com/antfu), i18n was part of it, but outside the scope of what we are using it for. 
 
-> Worthy Mountain requires Node >=14.18
+We wanted pretty much all of the other features that were missing from the lite version, so we opted to stay with the main version and just remove the i18n usages.
 
-### GitHub Template
+We are leaving the packages in for anyone that wants to come along and port things to other languages, but at this time its not feasible, for that reason all usages are being removed from the code
 
-[Create a repo from this template on GitHub](https://github.com/BBuchholz/worthy-mountain/generate).
+## Docker Support Removed
 
-### Clone to local
-
-If you prefer to do it manually with the cleaner git history
-
-```bash
-npx degit BBuchholz/worthy-mountain my-worthy-mountain-app
-cd my-worthy-mountain-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
-```
-
-
-## Usage
-
-### Development
-
-Just run and visit http://localhost:3333
-
-```bash
-pnpm dev
-```
-
-### Build
-
-To build the App, run
-
-```bash
-pnpm build
-```
-
-And you will see the generated file in `dist` that ready to be served.
-
-### Deploy on Netlify
-
-Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along the way, and your App will be live in a minute.
-
-### Docker Production Build
-
-First, build the vitesse image by opening the terminal in the project's root directory.
-
-```bash
-docker buildx build . -t vitesse:latest
-```
-
-Run the image and specify port mapping with the `-p` flag.
-
-```bash
-docker run --rm -it -p 8080:80 vitesse:latest
-```
+We don't use Docker, and are not supporting it at this time with this template, any lingering files feels free to submit an issue to remove but We will need to make sure nothing breaks when we do so, so I'm leaving everything as is for now.
 
