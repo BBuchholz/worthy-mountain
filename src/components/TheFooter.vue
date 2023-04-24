@@ -32,7 +32,7 @@ const {
     </RouterLink>
 
     <RouterLink icon-btn rel="noreferrer" to="/stream" target="_blank" title="Stream">
-      <div i-carbon-logo-github />
+      <div i-carbon-events />
     </RouterLink>
   </nav>
 </template>

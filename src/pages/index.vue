@@ -19,7 +19,6 @@ const { t } = useI18n()
     <div text-4xl>
       🜾
     </div>
-    <img alt="Coventry Grove Builders Association Presents logo" src="/CGBAP_LOGO.png">
     <p>
       <a rel="noreferrer" href="https://github.com/BBuchholz/worthy-mountain" target="_blank">
         Worthy Mountain
@@ -48,6 +47,7 @@ const { t } = useI18n()
         {{ t('button.go') }}
       </button>
     </div>
+    <img alt="Coventry Grove Builders Association Presents logo" src="/CGBAP_LOGO.png">
   </div>
 </template>
 
