@@ -3,8 +3,6 @@ title: Worthy Mountain - Stream
 ---
 
 <div class="text-center">
-  <!-- You can use Vue components inside markdown -->
-  <div i-carbon-language class="text-4xl -mb-6 m-auto" />
   <h3>Stream</h3>
 </div>
 

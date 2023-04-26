@@ -31,7 +31,7 @@ const {
       <div i-carbon-dicom-overlay />
     </RouterLink>
 
-    <RouterLink icon-btn rel="noreferrer" to="/stream" target="_blank" title="Stream">
+    <RouterLink icon-btn rel="noreferrer" to="/stream" title="Stream">
       <div i-carbon-events />
     </RouterLink>
   </nav>

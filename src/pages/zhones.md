@@ -3,8 +3,6 @@ title: 🜾
 ---
 
 <div class="text-center">
-  <!-- You can use Vue components inside markdown -->
-  <div i-carbon-language class="text-4xl -mb-6 m-auto" />
   <h3>Zhones</h3>
 </div>
 
