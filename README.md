@@ -79,26 +79,23 @@ ntl deploy --prod
 
 ## Checklist
 
-NB: these are just the steps we followed adapting from the original, modify this going forward for all sites to use (first task, this.)
-
 When you use this template, try to follow the checklist to update your info properly 
 
-- Modified LICENSING to BSD-3-Clause
+- [ ] Modify LICENSING as needed
 
-- Changed the title in `App.vue` 
-- Changed title on home page
+- [ ] Change the title in `App.vue` 
+- [ ] Change title on home page
 
-- Changed all instances the default CampTent symbol to [[THE MYRIAD SYMBOL]]
+- [ ] Change the default MYRIAD SYMBOL to reflect Desired Branding
 
-- Removed the `.github` folder which contains the funding info
-- Changed the hostname in `vite.config.ts`
-- changed all github links to point to https://github.com/BBuchholz/worthy-mountain
-- changed demo link to our Netlify site
-- added Logo to index.vue
+- [ ] Change the hostname in `vite.config.ts`
+- [ ] change all github links to point to the proper site
+- [ ] change demo link to hosted site
+- [ ] add Logo to index.vue
 
-- Changed the favicon in `public`
+- [ ] Change the favicon in `public`
 
-- Cleaned up the README 
+- [ ] Clean up the README when finished
 
 ## Features
 
